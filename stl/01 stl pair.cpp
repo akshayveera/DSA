@@ -41,6 +41,18 @@ int main()
 
     // pointing a new variable to same pair
 
+    /*
+    * &var_name - this syntax is used in different cases like 
+    *
+    * 1) for fetching the memory address - cout<<&var_name<<endl;  this return the address of the variable
+    * 2) for storing the memory address in a pointer - int *ptr = &var_name
+    * 3) passing the arguments of function by reference rather than by value - int add(int &a, int &b){ retrun a+b} - in this case rather than creating a copy of arguments it creates the reference to that value that is passed
+    * 4) creating a new variable and pointing it to existing variable rather than creating a copy of existing variable, similar to above case 3. - int &var_name = old_var
+    *  
+    * In the case of 3 and 4, creating a reference or pointing to value means that the new variable is pointed to same existing variable, that means old-varible and new-variable are pointed to same memory location/address unlike normal initalization in which each variable has its own memory location.
+    */
+
+
     cout<<"pointing a new variable to same pair"<<endl;
     pair<int,string> &pCopy1 = p;
     pCopy1.first = 9;
