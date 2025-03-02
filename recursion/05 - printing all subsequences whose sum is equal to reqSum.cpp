@@ -25,7 +25,8 @@ void subSets(vector<int> &v, vector<int> part, int idx, int sum, int reqSum) {
 }
 
 int main() 
-{
+{  
+    // printing all subsequences whose sum is equal to reqSum
     int n;
     cin>>n;
     
