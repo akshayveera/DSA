@@ -22,6 +22,7 @@ void subSets(vector<int> &v, vector<int> part, int idx) {
 
 int main() 
 {
+    //  printing all subsequence of an array
     int n;
     cin>>n;
     
